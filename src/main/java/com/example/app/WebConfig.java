@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") 
-            .allowedOrigins("http://localhost:3000") // Allow only your frontend app origin
+            .allowedOrigins("http://localhost:3000","https://proteinpro.netlify.app") // Allow only your frontend app origin
             .allowedMethods("GET", "POST", "PUT", "DELETE") // Allow these HTTP methods
             .allowedHeaders("*") // Allow all headers
             .allowCredentials(true); // If you need to handle cookies/session
