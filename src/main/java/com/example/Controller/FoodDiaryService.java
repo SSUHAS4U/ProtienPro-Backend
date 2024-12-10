@@ -15,8 +15,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/fooddiary")
-@CrossOrigin(origins = "http://localhost:3000") // Adjust based on your frontend URL
+@RequestMapping("/fooddiary") // Adjust based on your frontend URL
 public class FoodDiaryService {
 
     @Autowired
