@@ -26,7 +26,7 @@ import org.springframework.data.domain.Pageable;
 
 import com.example.Interface.UserInterface;
 import com.example.Model.User;
-import com.example.repository.DAO;
+import com.example.Interface.DAO;
 
 
 
@@ -40,24 +40,7 @@ public class UserService {
     
     @Autowired
     UserInterface userInterface;
-
-    // Sign Up
-//    @PostMapping("/users")
-//    public ResponseEntity<Map<String, String>> register(@RequestBody User user) {
-//        Map<String, String> response = new HashMap<>();
-//
-//        // Check if email already exists
-//        if (userInterface.findByEmail(user.getEmail()) != null) {
-//            response.put("message", "Email already exists");
-//            return new ResponseEntity<>(response, HttpStatus.CONFLICT); // 409 Conflict
-//        }
-//
-//        // Insert the user
-//        dao.insert(user);
-//        response.put("message", "User registered successfully");
-//        return new ResponseEntity<>(response, HttpStatus.CREATED); // 201 Created
-//    }
-    
+  
     @PostMapping("/users")
     public ResponseEntity<Map<String, String>> register(@RequestBody User user) {
         Map<String, String> response = new HashMap<>();
