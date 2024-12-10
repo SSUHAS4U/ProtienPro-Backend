@@ -30,7 +30,6 @@ import com.example.Interface.DAO;
 
 
 
-@CrossOrigin(orgins = "*")
 @RestController
 public class UserService {
 
