@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/exercisediary") // Adjust based on your frontend URL
 public class ExerciseDiaryService {
