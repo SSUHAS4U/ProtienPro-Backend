@@ -14,8 +14,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/exercisediary")
-@CrossOrigin(origins = "http://localhost:3000") // Adjust based on your frontend URL
+@RequestMapping("/exercisediary") // Adjust based on your frontend URL
 public class ExerciseDiaryService {
 
     @Autowired
