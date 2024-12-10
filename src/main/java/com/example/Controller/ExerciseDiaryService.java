@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/exercisediary") // Adjust based on your frontend URL
